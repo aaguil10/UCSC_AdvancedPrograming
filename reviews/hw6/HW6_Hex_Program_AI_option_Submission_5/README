@@ -1,0 +1,24 @@
+gmarch@ucsc.edu
+aglin@ucsc.edu
+PROJECT 6 HEX AI
+with MULTITHREADING
+
+**GROUPING NOTE: We mistakenly assumed our partnership would carry over from
+the design doc, so though we designed and implemented this system together,
+we are not currently partnered on CrowdGrader. We contacted Pohl and have both 
+turned in the same pair-programmed assignment, we hope for your understanding.
+
+***GRADING NOTE: DUE TO A LIMITATION OF THE G++ COMPILER RUNNING ON THE UNIX SERVER
+THIS PROGRAM *DOES NOT* RUN PROPERLY ON UNIX IC. To my understanding, this is
+caused by an out-of-date handling of C++ 11's <thread>. When run in a modern environment
+with an up-to-date compiler (I'm using the latest MS Visual Studio) it compiles
+and runs without issue. PLEASE DO NOT MARK US DOWN FOR THIS.
+
+This program plays a plays a game of HEX between you and an AI opponent. The
+AI is done by running through every optional move on the board and playing a set
+games starting with you selecting that tile, and totalling the eventual victories.
+After this is completed, we then play another set of games each tile where an opponent's
+tile is played in every location, and your losses are totalled. We then return these
+values and use them to compute the best possible move, both taking powerful moves
+for the AI and blocking overly-advantageous spaces for you. On my current hardware,
+this computation takes 13-15 seconds to do sequentially, and 6-8 seconds to do multithreaded.

@@ -1,0 +1,8 @@
+Alexander Sadeghi
+CMPS 109
+Asg1
+
+included files: helloworld.cpp, Makefile, README
+
+With this assignment I learned some of the basic differences between c and 
+c++.  The most difficult part was working with vectors, they are the most different from c in terms of syntax and differ in the way they work from arrays.  But after reading about them a little online, everything was very clear.  Overall this was a good introductory assignment to get used to basic c++ syntax and make sure we could write and compile a simple program.

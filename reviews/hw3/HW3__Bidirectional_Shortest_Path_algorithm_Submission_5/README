@@ -1,0 +1,19 @@
+README
+
+Partners:
+Tyler Marshik: tmarshik@ucsc.edu
+
+Rashad Kayed: rkayed@ucsc.edu
+
+
+To make:
+	make
+
+To run: 
+	./asg3 	
+	
+	The output includes the path, distance, and time to calculate the shortest path for both unidirectional and bidirectional algorithms run on graphs of 1000 with 0.1 and 0.01 density.  The bottom has a summary of average times per algorithm.
+
+	The purpose of this program was to implement the dijkstras algorithm and the bidirectional algorithm. We learned a lot actually from doing this assignment. This assignment helped improve our C++ skills and techniques. I think that besides from the equations the code was pretty straightforward. We included some comments that clarified the parts, and methods that were made. 
+
+	For 1000 nodes at density 0.1, the average time for unidirectional was 0.0216 and for bidirectional it was faster at 0.0033. For 1000 nodes at density 0.01, the average time for unidirectional was 0.0239 and for bidirectional it was faster at 0.0034. 

@@ -1,0 +1,20 @@
+Dijkstra’s and bi-directional Dijkstra’s algorithm.
+Tyler Gatta - Tgatta@ucsc.edu
+Logan McGhee - Lmcghee@ucsc.edu
+
+What went right:
+We successfully implemented Dijkstra’s and semi-successfully implemented bi-directional Dijkstra’s.
+
+What went wrong:
+The algorithms that we wrote are both grossly inefficient. 
+The algorithm for Dijkstra’s runs at an average of 2.8 seconds per trial for a 1000 node graph, while the algorithm for Bi-directional runs at an average of 10 seconds on a 2.7 Ghz processor.
+
+If we had to estimate, we would guess we are running at greater than n^2 runtime. :|
+
+The algorithm worked and returns success, but could be optimized if written again.
+
+---------------
+TO COMPILE:
+---------------
+
+run gmake with Makefile and main.cpp on Unix timeshare.

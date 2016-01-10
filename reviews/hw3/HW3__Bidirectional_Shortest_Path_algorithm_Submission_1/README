@@ -1,0 +1,11 @@
+Kevin Neal - ksneal
+2/6/14
+CMPS109 - HW2 Dijkstras and Bidirectional Search
+
+I had issues getting started on the program and was confused on how to implement the search algorithms.  I've added the randomly generated
+weights but could not get my dijktras to work so I didn't do the bidirectional alogrithm. I have the program just printing out the vertex and weight 
+since the shortest path algorithm's weren't working.
+
+
+
+

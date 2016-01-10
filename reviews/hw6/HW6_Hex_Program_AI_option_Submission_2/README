@@ -1,0 +1,17 @@
+Gary Lee
+gflee@ucsc.edu
+CMPS109
+
+hw6
+README
+
+Instructions:
+1. Place Hex.cpp and Makefile into the same folder in UNIX timeshare.
+2. Type "make" (without quotation marks) into UNIX terminal.
+3. Type "Hex" (without quotation marks) into UNIX terminal to execute program.
+
+This program is a C++ implementation of the Hex board game with 2 players.
+It runs every possible move for the AI to make 1000 times each. It then chooses the move with the most amount
+of wins and makes that move.
+It uses a depth first search algorithm to determine the winner.
+Multithreading has been implemented and is compile with the "-lpthread" flag in the Makefile.

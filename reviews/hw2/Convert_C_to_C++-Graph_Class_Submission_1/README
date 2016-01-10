@@ -1,0 +1,9 @@
+Logan McGhee - LMcGhee@ucsc.edu
+
+How to compile:
+ - Load makefile and .cpp onto the unix timeshare
+ - "gmake" to compile
+
+What did I learn? 
+ - Basic implementation of 2-dimensional vector lists
+ - Implementaion of a graph in C++

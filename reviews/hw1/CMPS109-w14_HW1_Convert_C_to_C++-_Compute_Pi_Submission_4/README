@@ -1,0 +1,14 @@
+Michael Ungerer
+1272985
+
+compile command:
+
+make
+
+run command: piC   then enter an int when prompted 
+
+
+This program takes in a number and cacluates PI basied on the number of trials the user inputs.
+
+the origonal file did not include srand() and the instructions did not explicitly say that we needed srand.
+I learned how to use inline, I could see why it would be slightly more efficent than making function calls. Although It was not implemented here, I learned how to use auto in my for loops. It is a very easy and fast way to traverse the vector. Also I learned that this program when written in C can still be compiled in C++ and run without error. Lastly

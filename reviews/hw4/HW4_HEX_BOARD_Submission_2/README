@@ -1,0 +1,27 @@
+ Kevin Doyle
+ February 17th, 2014
+ CMPS 109
+ Assignment 4
+
+ This program plays the game HEX by itself, in a dumb way. 
+It will build a blank game board, then randomly distribute 
+moves across the board until no moves remain. Then it 
+determines which player has won the game. 
+
+ In particular, this exact file as I submit it will play and
+print four games, in the board dimensions mentioned on the
+HEX Wikipedia page. 
+
+ I learned to implement a breadth first search. I got better 
+at working with the STL list and STL vector. I would have liked
+a better method of checking for connections than the six if
+statements I used, but I have a midterm in another class to study 
+for and couldn't think of a better way. 
+
+Compile:
+   make
+   
+Files included:
+   hex.cpp
+   makefile
+   README (the one you are reading)

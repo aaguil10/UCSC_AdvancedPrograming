@@ -1,0 +1,40 @@
+Alexander Sadeghi
+Delan Diaz
+CMPS109 - FINAL PROJECT
+
+AI Game of Hex that uses networking(sockets)
+
+References:
+http://www.bogotobogo.com/cplusplus/sockets_server_client.php
+
+Files:
+game.cpp
+game.h
+hexBoard.h
+hexGraph.h
+hexGraph.cpp
+main.cpp
+server.cpp
+Makefile
+Readme
+
+Notes:
+-We use a const 10000 Monte Carlo iterations for each game
+-The AI works just fine but we could not get the networking portion to work correctly with the game so what it does is
+Start a connection
+Acknowledge the connection
+Play the game on the client
+and then relay the winner to the server
+
+How to Compile:
+Open two terminals.  In each go into the directory where all the files are.
+On terminal 1 type: g++ -std=c++11 -o server server.cpp
+on terminal 2 type: make
+On terminal 1 type: ./server 20001
+on terminal 2 type: client 127.0.0.1 20001
+
+Then begin playing!
+*if server responds with "ERROR on binding: Address already in use" just add 1 to the port address, so 20002 instead of 200001 and so on
+
+
+

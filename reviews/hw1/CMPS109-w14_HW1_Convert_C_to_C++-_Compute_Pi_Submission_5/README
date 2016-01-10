@@ -1,0 +1,19 @@
+*************************************************************
+Hai Vo
+hqvo@ucsc.edu
+CMPS109
+Converting monte carlo integration for pi C program to C++
+*************************************************************
+The assignment is to convert Monte Carlo's C program to a 
+C++ program. Changing the comment to a // format, fixing the 
+header, changing the array to C++'s vector, and fixing the 
+print statements.
+
+In this assignment I learn about namespaces and how to use it 
+in C++. I also learned about how to cast a type in C++ and finally 
+how to use vectors in C++ instead of now arrays.
+
+How To Run:
+Unzip it to a folder and make sure the Makefile and pi.cc file
+is in the same folder than go to the console and cd into the 
+folder and type 'gmake all'.

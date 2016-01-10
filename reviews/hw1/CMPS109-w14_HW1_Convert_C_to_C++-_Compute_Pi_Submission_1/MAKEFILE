@@ -1,0 +1,3 @@
+helloworld:helloworld.cpp
+	g++ -std=c++11 -o helloworld helloworld.cpp
+

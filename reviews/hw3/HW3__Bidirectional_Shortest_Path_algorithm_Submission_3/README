@@ -1,0 +1,22 @@
+Jacky Wong
+ID: 1281439
+
+This program compares unidirectional Dijkstra's and bidirection Dijkstra's algorithm on graphs of size 1000.
+Should be working fine. Code is relatively long.
+In this program, I learned how to implement Dijkstra's algorithm as well as how to implement a bidirectional search.
+The paths and distances are not printed because searches are perfomed 100 times for each graph as requested.
+
+To compile, type "make all". To run the program, type "main".
+
+This program uses a 2D matrix to represent the graph.
+One matrix represents the connections between nodes and another represents the distances between the nodes.
+There are also vectors that are used to keep track of the visited nodes as well as parents.
+For bidirectional search, the original matrices are transposed to be able to search from the end point.
+The graphs created are checked to make sure it is connected. If it isnt connected, it will continue to make a new graph until a connected one is created.
+The graphs are tested 100 times each. One with 0.1 density and the other 0.01 density.
+The bidirectional search performs 2 Dijkstra's unidrectional searches at the same time. Each search has its own vectors etc to keep track of information.
+The bidirectional search continues until a visited node exists in both the searches.
+Timing of the algorithms is calculated using the clock() function.
+Each time the start and end nodes are changed, the vectors storing information for a search are reset.
+
+

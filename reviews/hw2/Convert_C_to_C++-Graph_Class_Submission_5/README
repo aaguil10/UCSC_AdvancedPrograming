@@ -1,0 +1,26 @@
+Name: Kevin Doyle (kdoyle) 
+Date: January 27th, 2014
+CMPS 109
+Assignment 2
+
+My second attempt at using C++, this program was
+more difficult for me than the last. I tried and
+failed at learning to utilize advanced random n-
+umber generators, and also two dimensional vect-
+ors. I will keep trying. I succeeded in using t-
+he C++ <new> and found my way around class stru-
+cture, pointers on top of pointers, scope, and  
+the two dimensional array I ended up using. 
+
+Three files are included:
+-README (the one you are reading)
+-makefile
+-rgraph.cpp
+
+Compilation instructions:
+-use command "make" to compile
+-executable will be called "rgraph"
+
+Program:
+-prints two pseudo-random matrices 
+

@@ -1,0 +1,5 @@
+Student: Jake VanAdrighem -- ID: 1387294
+
+Hex placement algorithm was really difficult to try and make elegant. Used multiple structures to manage all of the placement data along with the connections list in a graph.
+
+Learned: Effective use of the overloaded stream operator in the context of this assignment. Very elegant and fun to do.

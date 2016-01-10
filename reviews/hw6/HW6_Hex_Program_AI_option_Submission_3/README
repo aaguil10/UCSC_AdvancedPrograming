@@ -1,0 +1,36 @@
+-Author: Matt Caruano
+-threadedHexGame.cpp: Provides code for running time analyis on threaded vs. unthreaded, as well as code for a complete game of Hex vs. the AI.
+-threadedHex.h: Provides functions for construction of a Hex game, an overloaded << operator, and two methods for making AI moves: one utilizing threading, the other without.
+-threadedHex.cpp: Implements threadedHex.h
+
+//********************************************************
+IMPORTANT: This does NOT compile on the school's UNIX servers due to a bug in g++ 4.8.1.
+Threading using the <thread> library works like this: You make a thread, you give it a function to run on that thread, and then you pass it the arguments like so:
+thread t1(function, arg1, arg2)
+BUT if your function passes an argument by reference, say, a vector that you want it to modify, you HAVE to wrap that argument in ref() from the std namespace. So if arg1 was an int you were passing in that you wanted 'function' to modify, you would have to declare the thread this way:
+thread t1(function, ref(arg1), arg2)
+
+Here is a more thorough explanation from StackOverFlow if you want to check it out further:
+http://stackoverflow.com/questions/5116756/difference-between-pointer-and-reference-as-thread-parameter
+
+HOWEVER, in g++ 4.8.2 and g++ 4.8.1, it is a documented issue that ref() wrappers in arguments to threads created using the new <thread> library do not function properly, and throw compiler errors. I found an official error report of this in the gcc-bugs@gcc.gnu.org mailing list archives:
+http://gcc.gnu.org/ml/gcc-bugs/2014-01/msg01214.html
+
+I seriously couldn't believe it, but my program doesn't compile on the school's servers due to g++ 4.8.1. I spoke with Vladimir, one of the TA's, and he said that this is not my fault. He said the "special" parts that people do for this final project don't necessarily have to compile on the school's environment, as long as you provide thorough documentation of the issue. 
+
+So what I've done, in addition to the above explanation, is provided some screenshots in .png format that display the output when I run my time analysis as well as a few iterations of gameplay. 
+//********************************************************
+
+Run-Time Analysis:
+Aside from that bit about the g++ compiler, this project was actually really fun. I learned how to use the new <thread> library, and it was VERY simple. I was really surprised by that. Also, in my proposal I mentioned that I would be providing a run-time analysis on the two versions of the AI move, so here are those results:
+Each move was calculated using 1000 simulations for every single available board position (Up to 120,000 simulated games per individual move), and determining which position was more likely to win based on a randomly generated game.
+-Un-threaded AI move took 135.029 seconds to calculate
+-Threaded AI move took 45.349 seconds to calculate
+So threading improved the performance of my AI by 298%, or almost 3x!
+
+AI Performance:
+Given the vast number of simulations, the AI has proven to be extremely good. As you can see from the screenshots provided, it beat me and I was legitimately trying. My standard output terminal only retained so much history, and I lost the entire beginning of the game, but I assure you the very first turn you see was after I was already scrambling to stop it from reaching the other side.
+
+
+Further Note:
+Obviously, if you have a modern windows machine, this program will run perfectly fine if you load the three files up in an IDE and run it.

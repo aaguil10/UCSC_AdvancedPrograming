@@ -1,0 +1,21 @@
+************************************************************
+CMPS109
+HW6 HEX GAME WITH GUI
+*************************************************************
+Hai Vo
+Partner with James Kuch (forgot to handshake)
+
+So for this project we decided to make the hex game with a GUI. To play 
+you simply pick a color first (either red or blue). Red will go first 
+and of course the AI will play the opposite. To play you simply use 
+WASD to move and R to fill the spot your cursor is on. You can also 
+hit Q to reset the board. You have to decide on a color on the console 
+before you can see the board.
+V 1.1: "Swapping" should work now, whoever goes second has the option to play
+over their opponent's space- just for that one turn. 
+
+Warning the load time for AI moves is kind of slow but it works.
+
+How to Run
+have all of the files in the same folder and type gmake all of make.
+Tested on the Unix timeshare-login with ssh -X (ucscid)@unix.ucsc.edu

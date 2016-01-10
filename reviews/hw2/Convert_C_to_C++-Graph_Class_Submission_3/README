@@ -1,0 +1,19 @@
+//============================================================================
+// Name        : asg2.cpp
+// Copyright   : Nguyen Do
+// Description : C++ version of graph generation
+//============================================================================
+
+Converted from C includes:
+- matrix representation
+- calloc replace by vector and resize
+- printf goes to use of "<<"
+- struct becomes class
+- advanced make_  becomes a constructor
+- use <random> instead of rand() and srand()
+- change to one line comments
+- change 2D array to vector
+- inline short function
+
+What I have learn via this assignment are the new Random class, 
+how to declare, define and reference class objects.

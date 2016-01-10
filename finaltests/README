@@ -1,0 +1,53 @@
+Alejandro Aguilar aaguil10@ucsc.edu
+Vanda Pandhumsoporn vpandhum@ucsc.edu
+
+We implemented the Hex Game with AI using Monte Carlo method and chose to do socket programming.
+
+THREE WAYS TO IMPLEMENT THE GAME
+
+-----------------1--------------------------
+The easiest way to test this is to go to 105 and open two windows. 
+Open two windows in the unix server. 
+1.) Compile using make in any of the windows.
+2.) Run the server by typing in one window  ./simple_server 
+3.) Run the client in the other window    ./simple_client
+
+* You have to run server before client!
+
+
+-----------------2--------------------------
+
+If you are using putty or some ssh. (Sometimes will work if you are lucky!) 
+Open two windows in the unix server. 
+1.) Compile using make in any of the windows.
+2.) Run the server by typing in one window  ./simple_server 
+3.) Run the client in the other window    ./simple_client
+
+* You have to run server before client!
+
+-----------------3--------------------------
+
+If you are still using putty or some ssh.
+If putty doesn't connect here is what you need to do.
+
+1.) You need two windows. 
+2.) Open first window and run ipconfig then go open the 2nd window on putty and
+type in your cruzid@ipaddress where the ip address is what the other window gave you.
+3.) Compile using make in any of the windows.
+4.) Run the server by typing in one window  ./simple_server 
+5.) Run the client in the other window    ./simple_client 
+
+EXAMPLE:
+WINDOW 1
+ipconfig
+
+WINDOW
+login: yourcruzid@ipaddress
+
+
+
+
+
+
+
+

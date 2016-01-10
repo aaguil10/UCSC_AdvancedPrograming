@@ -1,0 +1,51 @@
+//Kevin Yeap
+//1270597
+//kyeap@ucsc.edu
+//cpms109 f14
+
+Files
+	node.h, node.c, hex.cpp, Makefile, README
+
+compile
+	type in "make" into command line it will 
+	compile 
+
+run
+	type in "hex" to run the program
+
+
+Material learned/Program details
+	
+	I implemented the hexBoard using a 2d vector (which made sense to me at the time i started the program). This resulted in me needing 2 variables (an X and a Y) to keep track of neighbor nodes.
+	It is the reason I have pairs of variables. 
+	learned how to use class. class is used to make an object. objectect orientated programm is cleaner and more organized. Also learned how to overload an operator.
+	In this program specifically I overloaded the << to print out my hex board.
+
+Player 1 can only win left to right
+Player 2 can only win top to bottom
+
+
+printed hexBoard looks like this:
+
+
+	 hexBoard size 11
+
+      a b c d e f g h i j k
+     -------------------------
+    1 \ 1 1 1 2 2 2 2 2 2 1 1 \ 
+     2 \ 1 1 1 1 1 2 2 2 1 1 2 \ 
+      3 \ 1 1 1 2 2 1 2 1 1 2 2 \ 
+       4 \ 1 1 2 1 2 1 2 1 2 2 1 \ 
+        5 \ 2 1 1 2 2 2 1 2 2 2 2 \ 
+         6 \ 1 2 2 2 1 2 2 1 2 2 1 \ 
+          7 \ 2 1 2 1 2 2 2 2 1 1 2 \ 
+           8 \ 2 1 1 2 1 2 1 1 1 2 2 \ 
+            9 \ 2 2 1 1 1 1 2 1 1 2 1 \ 
+            10 \ 1 1 1 2 2 1 1 2 2 1 2 \ 
+             11 \ 1 2 2 1 1 1 1 1 1 2 2 \ 
+                 -------------------------
+
+        1 represents a place taken by player 1
+	2 represents a place taken by player 2
+
+

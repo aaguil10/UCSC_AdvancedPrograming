@@ -1,0 +1,9 @@
+James Marshall
+jbmarsha@ucsc.edu
+
+This program was pretty interesting, though i was not able to work on it as much as I would have liked.
+The program creates randomly valued game pieces using the random_device object, and then
+prints that to the terminal. It was pretty tough to get it to look right, and it still doesn't
+look quite like a hex board. For the final project it will look much better. I'm going to implement
+a depth-first search or a breadth-first search, if not dijkstra.
+To run, type make and then hex.
